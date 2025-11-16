@@ -17,7 +17,7 @@ The notebook covers:
   * `min_samples_split`
   * `min_samples_leaf`
   * `max_leaf_nodes`
-* Applying **post-pruning** using cost-complexity pruning (`ccp_alpha`)
+
 * Comparing performance before and after pruning
 
 ## Key Concepts
@@ -44,10 +44,10 @@ Entropy = -\sum p_i \log_2(p_i)
 
 Pre-pruning restricts tree growth by limiting depth or requiring a minimum number of samples to split. This prevents overly complex trees and reduces overfitting early during training.
 
-### Post-Pruning (Cost-Complexity Pruning)
+### Post-Pruning 
 
 Post-pruning first grows a full tree, then prunes branches that provide minimal improvement.
-Controlled through the parameter `ccp_alpha`; higher values lead to simpler trees.
+
 
 ## Running the Project
 
